@@ -4,7 +4,7 @@ from tkinter import *
 
 root = tkinter.Tk()
 root.geometry('750x550')
-root.title('Roll Dice')
+root.title('Dobbelsteen Emjee')
 
 Namen = ["Ad", "Boaz", "Remi", "William"]
 label = tkinter.Label(root, text='', font=('Helvetica', 260))
@@ -20,7 +20,7 @@ def genereer_namen():
     label1.configure(text=f'{random.choice(Namen)}')
     label1.pack()
 
-button = tkinter.Button(root, text='roll dice', foreground='blue', command=lambda:[roll_dice(), genereer_namen()])
+button = tkinter.Button(root, text='Gooien', foreground='blue', command=lambda:[roll_dice(), genereer_namen()])
 button.place(x=820,y=10)
 button.pack()
 root.mainloop()
