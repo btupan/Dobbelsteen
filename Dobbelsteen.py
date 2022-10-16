@@ -22,4 +22,5 @@ def genereer_namen():
 
 button = tkinter.Button(root, text='roll dice', foreground='blue', command=lambda:[roll_dice(), genereer_namen()])
 button.place(x=820,y=10)
+button.pack()
 root.mainloop()
